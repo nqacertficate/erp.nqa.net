@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certificate Verification</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Georgia, serif;
+    }
+
+    body {
+      background-color: #ffffff;
+      color: #000000;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Top Logo Header */
+    .header {
+      padding: 10px 15px;
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-circle {
+      width: 55px;
+      height: 55px;
+      background-color: #0066b2;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: bold;
+      position: relative;
+    }
+
+    .logo-circle::after {
+      content: "•";
+      color: #f37021;
+      position: absolute;
+      right: 6px;
+      bottom: 12px;
+      font-size: 20px;
+    }
+
+    /* Main Container */
+    .container {
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+      flex: 1;
+    }
+
+    /* Main Orange Banner */
+    .main-title {
+      background-color: #f37021;
+      color: #ffffff;
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+      padding: 10px 5px;
+      border: 1px solid #ffffff;
+    }
+
+    /* Table Layout */
+    .info-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .info-table tr {
+      border-bottom: 2px solid #ffffff;
+    }
+
+    .info-table td {
+      padding: 8px 10px;
+      vertical-align: top;
+      font-size: 18px;
+      line-height: 1.3;
+    }
+
+    .label-col {
+      background-color: #0066b2;
+      color: #ffffff;
+      font-weight: bold;
+      text-align: right;
+      width: 42%;
+      white-space: normal;
+    }
+
+    .value-col {
+      background-color: #f4f4f4;
+      color: #000000;
+      width: 58%;
+    }
+
+    /* Editable Focus Styling */
+    [contenteditable="true"]:focus {
+      outline: 2px dashed #f37021;
+      background-color: #fffde7;
+      color: #000000;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #0066b2;
+      color: #ffffff;
+      text-align: center;
+      padding: 10px;
+      font-size: 18px;
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Logo Bar -->
+  <div class="header">
+    <div class="logo-circle" contenteditable="true">nqa</div>
+  </div>
+
+  <!-- Content Table -->
+  <div class="container">
+    <div class="main-title" contenteditable="true">
+      Tech Vision Engineering Services
+    </div>
+
+    <table class="info-table">
+      <tr>
+        <td class="label-col" contenteditable="true">CB Cert NO.</td>
+        <td class="value-col" contenteditable="true">120276</td>
+      </tr>
+      <tr>
+        <td class="label-col" contenteditable="true">Company Name</td>
+        <td class="value-col" contenteditable="true">Etna Lab</td>
+      </tr>
+      <tr>
+        <td class="label-col" contenteditable="true">Company Address</td>
+        <td class="value-col" contenteditable="true">Suite # 54, A Block, Commercial Area Hajveri Scheme, Harbanspura, Lahore - Pakistan</td>
+      </tr>
+      <tr>
+        <td class="label-col" contenteditable="true">Scope</td>
+        <td class="value-col" contenteditable="true">Maintenance, Calibration and Certification of Measuring Equipments.</td>
+      </tr>
+      <tr>
+        <td class="label-col" contenteditable="true">Standard</td>
+        <td class="value-col" contenteditable="true">ISO 9001:2015</td>
+      </tr>
+      <tr>
+        <td class="label-col" contenteditable="true">Accreditation Symbol</td>
+        <td class="value-col" contenteditable="true">UKAS</td>
+      </tr>
+      <tr>
+        <td class="label-col" contenteditable="true">Issue Date</td>
+        <td class="value-col" contenteditable="true">05 July 2022</td>
+      </tr>
+      <tr>
+        <td class="label-col" contenteditable="true">Previous Certificate Expiry</td>
+        <td class="value-col" contenteditable="true">05 July 2025</td>
+      </tr>
+      <tr>
+        <td class="label-col" contenteditable="true">Reissue Date</td>
+        <td class="value-col" contenteditable="true">30 July 2025</td>
+      </tr>
+      <tr>
+        <td class="label-col" contenteditable="true">Expires Date</td>
+        <td class="value-col" contenteditable="true">05 July 2028</td>
+      </tr>
+      <tr>
+        <td class="label-col" contenteditable="true">Status</td>
+        <td class="value-col" contenteditable="true">Valid</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Bottom Footer -->
+  <div class="footer" contenteditable="true">
+    Copyright © 2026 SNQA. All rights reserved.
+  </div>
+
+</body>
+</html>
